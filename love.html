@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love question ❤️</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: centre;
+            align-items: centre;
+            backgrount: linear-gradient(to right,#ffdde1,#ee9ca7);
+            font-family: Arial,sens-serif;
+        }
+        .box{
+            backgrount: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: centre;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            width: 320px;
+
+        }
+        h1{
+            color: #ff4d4d;
+            margin-bottom: 20ps;
+        }
+        button{
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        #yesBtn{
+            backgrount-color: #ff4d6d;
+            color: white;
+        }
+        #message{
+            margin-top: 20px;
+            font-size: 20px;
+            color: #ff4d6d;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <h1>Do You Love Me? 💕</h1>
+    <button id="yesBtn" onclick="showLove()">Yes 😍</button>
+    <button id="noBtn" onmouseover="moveButton()">No </button>
+    <div id="message"></div>
+    </div>
+    <script>
+        function showLove(){
+            document.getElementById("message").innerHTML = "Awwww💖Nanum Unna Love Pantren🙈✨";
+        }
+        function moveButton(){
+            const noBtn = document.getElementById("noBtn");
+            const x = Math.floor(Math.random()*200)-100;
+            const y = Math.floor(Math.random()*200)-100;
+
+            noBtn.style.position = "relative";
+            noBtn.style.left = '${x}px';
+            noBtn.style.top = '${y}px';
+        }
+    </script>
+
+</body>
+</html>
